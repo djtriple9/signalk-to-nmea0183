@@ -34,8 +34,8 @@ module.exports = function (app) {
       var seconds = ('00' + datetime.getSeconds()).slice(-2)
       return nmea.toSentence([
         '$CDDSC',
-        nmea.toNmeaDegreesLatitude(position.latitude),
-        nmea.toNmeaDegreesLongitude(position.longitude),
+        nmea.toNmeaDegreesLatitude(seven.latitude),
+        nmea.toNmeaDegreesLongitude(seven.longitude),
         hours + minutes + seconds + '.020',
         'A'
       ])
